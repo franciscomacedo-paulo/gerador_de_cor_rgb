@@ -8,6 +8,45 @@
     <title>Projecto gerador de cor RGB</title>
 </head>
 <body>
+    <h1>Gerador de Cor RGB</h1>
+    <div class="main_conteiner">
+
+        <!-- CONTEINER DOS RANGE E DO BUTTON PARA APLIACAR A COR-->
+        <div class="range_conteiner c">
+
+            <div class="red dados">
+                <label for="r">Red(vermelho)</label>
+                <input type="range" name="r" id="r" max="255">
+            </div>
+
+            <div class="green dados">
+                <label for="g">Green(verde)</label>
+                <input type="range" name="g" id="g" max="255">
+            </div>
+
+            <div class="blue dados">
+                <label for="b">Blue(azul)</label>
+                <input type="range" name="b" id="b" max="255">
+            </div>
+
+            <div class="btn_apply_color">
+                <button type="button" id="btn">Aplicar Cor</button>
+            </div>
+
+        </div>
+
+        <!-- CONTEINER ONDE VAI SER APLICADO A COR E MOSTRARÁ O CODIGO RGB-->
+         <div class="conteiner_result c">
+            <div class="mostrar_cor_selecionada">
+
+            </div>
+            <div class="codigo_rgb">
+                <span style="color: #ccc;">Código rgb:</span>
+                <input type="text" readonly id="codigo_final" autofocus="off"></input>
+            </div>
+         </div>
+
+    </div>
 
 
 

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    color: rgb(208, 88, 67);
+    letter-spacing: 0.5px;
+}
+body{
+    background-color: #121111;
+}
+h1{
+    text-align: center;
+    
+}
+/** =================== ESTILIZACAO DO MAIN CONTEINER ======================= **/
+.main_conteiner{
+    background-color: #28272774;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #585757;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    
+}
+/** =================== ESTILIZACAO DOs CONTEINER DENTRO DO MAIN CONTEINER ======================= **/
+.c{
+    background-color: #121111;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    flex: 1;
+
+}
+label{
+    display: block;
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+input[type="range"]{
+    width: 250px;
+}
+
+/*** DIV COM O BUTTON */
+.btn_apply_color{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row wrap;
+
+    & button{
+        padding: 16px;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        background-color: rgb(115, 46, 34);
+        color: #ccc;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 50%;
+        transition: .3s linear;
+
+    }
+}
+button:hover{
+    background-color: rgb(87, 42, 33);
+    cursor: pointer;
+}
+/** ESTILIZACAO DA DIV QUE VAI EXIBIR O RESULTADO */
+.mostrar_cor_selecionada{
+    width: 65%;
+    height: 200px;
+    background-color: #c1bfbf;
+    border-radius: 6px;
+    margin: 0 auto;
+ 
+}
+.codigo_rgb{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+p{
+    border: 1px solid #585757;
+    padding-inline: 16px;
+}
+input[type="text"]{
+    outline: none;
+    margin: 0px 10px;
+    width: 80px;
+    padding: 6px;
+    background-color: transparent;
+    color: #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
