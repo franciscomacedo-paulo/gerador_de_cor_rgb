@@ -28,6 +28,7 @@ h1{
     gap: 16px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 /** =================== ESTILIZACAO DOs CONTEINER DENTRO DO MAIN CONTEINER ======================= **/
@@ -50,6 +51,7 @@ label{
 }
 input[type="range"]{
     width: 250px;
+    cursor: pointer;
 }
 
 /*** DIV COM O BUTTON */
@@ -103,11 +105,21 @@ p{
 input[type="text"]{
     outline: none;
     margin: 0px 10px;
-    width: 80px;
+    width: 140px;
     padding: 6px;
     background-color: transparent;
     color: #ccc;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 14px;
+}
+.codigo_rgb button{
+    background-color: transparent;
+     & i{
+        color: #ccc;
+     }
+}
+
+@media (max-width: 760px){
+
 }
 
